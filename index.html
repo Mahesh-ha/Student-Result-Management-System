@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage</title>
+    <style type="text/css">
+
+        body{
+                margin: 0;
+                font-family: 'Roboto';
+                background-color: black;
+                color: white;
+            }
+
+    .title{height: 80px;
+                display: flex;
+                font-size: 50px;
+                color: white;
+                align-items: center;
+                font-family: monospace;
+                margin-left: 180px;
+                color: #841ef5;
+               
+        }
+        ul{
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+ 
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+}
+
+
+li a,.dropbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px 50px;
+}
+
+li a:hover, .dropdown:hover {
+    background-color: #61892f
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:  #474b4f;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.info span {
+    color: #86c232;
+    font-size: 20px;
+}
+.main p {
+    font-size: 16px;
+    line-height: 2;
+    color: white;
+}
+.footer {
+    display: grid;
+    
+    line-height: 2;
+    
+}
+
+.footer span {
+    font-size: 20px;
+    color:#86c232;
+}
+
+
+    </style>
+
+</head>
+<body >
+    
+    <div style="padding: 20px;">
+        <div class="title">
+            <p >Student Result Management System</p>
+        </div>
+        
+        <div class="">
+            <ul>
+                <li>
+                    <a href="index.html"style="margin-left: 100px;">Home</a>
+                </li>
+                <li>
+                    <a href="admin_login.php"style="margin-left: 100px;">Admin Login</a>
+                </li>
+                <li class="dropdown"style="margin-left: 100px; onclick="toggleDisplay('1')">
+                    <a href="#" class="dropbtn" ">Faculties &nbsp;
+                      
+                    </a>
+                    <div class="dropdown-content" id="1">
+                        <a href="">Science</a>
+                        <a href="">Technology</a>
+                        <a href="">Sports</a>
+                        <a href="">Others</a>
+                    </div>
+                </li>
+                <li class="dropdown"style="margin-left: 100px;" onclick="toggleDisplay('2')">
+                    <a href="#" class="dropbtn">Student &nbsp;
+                       
+                    </a>
+                    <div class="dropdown-content" id="2">
+                        <a href="">Admissions</a>
+                        <a href="">Scholarship</a>
+                        <a href="">Examination</a>
+                        <a href="./student_login.php">Results</a>
+                        <a href="./admin_login.php">Manage Results</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br><br>    
+        <div style="padding-left: 200px;">
+            <img src="images/home3.jpg" width="700" height="300"  alt="img">
+        </div>
+        <br><br><br>
+    
+        <div class="main">
+            <span style="font-size: 25px;color:#86c232 ">About the University</span>
+            <p>PES University, located in Bangalore, India is one of the country's leading teaching and research universities. The University is committed to providing "education for the real world" that inspires students to realize their potential. Our students graduate with the ability to adapt to an intellectually and technologically changing environment. Over the years, we have accomplished this with the participative efforts of the management, staff, students and parents.</p>
+    
+            <div class="info">
+                <div>
+                    <span >Courses</span > <hr>
+                    <p>Still deciding what you want to study at university? Browse the full range of options with our course guides, a detailed information about types of program, specializations and career prospects.</p>
+                </div>
+                <div>
+                    <span >Admissions</span > <hr>
+                    <p>Whether your new to campus or are looking for more information on campus activities you can find information about admissions and financial aid here</p>
+                </div>
+                <div>
+                    <span>Library</span> <hr>
+                    <p>Be the first to know. Stay informed and up to date with the upcoming technology. Get varied knowledge right from social events to newest research topics by clicking the link</p>
+                </div>
+                <div>
+                    <span>Campus Region</span> <hr>
+                    <p>Welcome to Campus, a multipurpose WordPress theme. Go ahead and click around, there is a ton of new stuff to check out. For more information</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div >
+                <span >Contact Us<hr></span>
+                <p>admissions@pes.edu</p>
+                <p>+91 80 26721983</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
